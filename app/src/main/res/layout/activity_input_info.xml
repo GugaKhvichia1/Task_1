@@ -1,0 +1,69 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/input"
+    android:padding="16dp"
+    android:layout_marginTop="100dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    tools:context=".InputInfoActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="224dp"
+        android:src="@drawable/baseline_message_24"
+        android:contentDescription="send_message_image"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/userEmailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="Enter your email"
+        tools:ignore="HardcodedText"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/edit_text_styles" />
+
+    <EditText
+        android:id="@+id/recipientEmailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="Enter recipient's email"
+        tools:ignore="HardcodedText"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/edit_text_styles"/>
+
+    <EditText
+        android:id="@+id/messageEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:background="@drawable/edit_text_styles"
+        android:hint="Enter your message here"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:maxLines="4"
+        android:maxLength="250"
+        android:padding="10dp"
+        tools:ignore="HardcodedText"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="SEND MESSAGE"
+        android:textColor="@color/black"
+        tools:ignore="HardcodedText"
+        android:background="@drawable/button_color_style"/>
+</LinearLayout>
